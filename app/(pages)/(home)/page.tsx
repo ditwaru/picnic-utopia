@@ -1,10 +1,24 @@
-import Hero from "@/components/ui/Hero";
 import { getPage } from "ditwaru-aws-helpers";
+import HomeClient from "@/components/pages/Home";
+
+interface HeroSection {
+  type: "hero";
+  title: string;
+  text: string;
+  image: string;
+}
 
 export default async function Home() {
   const data = await getPage("picnic-utopia", "home");
 
-  const [{ title, text, image }, { text: description }] = data?.sections!;
+  if (!data) {
+    throw new Error("Failed to fetch home data");
+  }
 
-  return <Hero title={title} subtitle={text} backgroundImage={image} description={description} />;
+  // Extract sections from CMS data at build time
+  const heroSection = data.sections.find(
+    (section) => section.type === "hero"
+  ) as unknown as HeroSection;
+
+  return <HomeClient heroSection={heroSection} />;
 }
