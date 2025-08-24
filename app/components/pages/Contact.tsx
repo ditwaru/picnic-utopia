@@ -493,7 +493,7 @@ function ContactForm({ heroSection, contactInfo, formSection, packages }: Contac
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-pink-500 font-semibold py-4 px-6 rounded-lg hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed drop-shadow-2xl"
+                  className="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-amber-900 font-semibold py-4 px-6 rounded-lg hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed drop-shadow-2xl"
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </button>

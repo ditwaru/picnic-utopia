@@ -181,7 +181,7 @@ export default function ServicesClient({
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
                   <p className="text-gray-600 mb-4">{service.shortDescription}</p>
-                  <button className="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-pink-500 font-semibold py-3 px-6 rounded-full hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 hover:cursor-pointer drop-shadow-2xl">
+                  <button className="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-amber-900 font-semibold py-3 px-6 rounded-full hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 hover:cursor-pointer drop-shadow-2xl">
                     Learn More
                   </button>
                 </div>
@@ -326,7 +326,7 @@ export default function ServicesClient({
               <div className="flex gap-4">
                 <Link
                   href={`/contact?service=${selectedService.title}`}
-                  className="flex-1 bg-gradient-to-r from-yellow-400 to-orange-500 text-pink-500 font-semibold py-3 px-6 rounded-full hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 hover:cursor-pointer text-center drop-shadow-2xl"
+                  className="flex-1 bg-gradient-to-r from-yellow-400 to-orange-500 text-amber-900 font-semibold py-3 px-6 rounded-full hover:from-yellow-300 hover:to-orange-400 transition-all duration-300 hover:cursor-pointer text-center drop-shadow-2xl"
                 >
                   Book This Service
                 </Link>
