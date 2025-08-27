@@ -15,11 +15,11 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-white/95 backdrop-blur-sm border-b border-yellow-200">
+    <header className="bg-gradient-to-br from-yellow-300/60 to-orange-400/80 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center space-x-2">
-            <span className="text-xl font-bold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
+            <span className="text-xl font-bold bg-gradient-to-r from-amber-200 to-fuchsia-300 bg-clip-text text-transparent">
               Picnic Utopia
             </span>
           </Link>
@@ -30,7 +30,7 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-gray-700 hover:text-pink-500 transition-colors duration-200 font-medium"
+                className="bg-gradient-to-r from-amber-200 to-fuchsia-300 bg-clip-text hover:text-fuchsia-300 transition-colors duration-200 font-medium"
               >
                 {item.label}
               </Link>
